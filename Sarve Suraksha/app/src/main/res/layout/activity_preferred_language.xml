@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#f8fbff"
+    android:layout_height="match_parent"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.Preferred_Language.PreferredLanguage"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.1"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:src="@drawable/profile_back">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/interextrabold"
+            android:letterSpacing="-0.01"
+            android:lineHeight="24dp"
+            android:text="Preferred Language"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/round_tint"
+            android:gravity="center"
+            android:backgroundTint="#CFEFF7"
+            android:background="@drawable/round_my_policies"
+            android:orientation="vertical"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="@font/interextrabold"
+                android:letterSpacing="-0.01"
+                android:lineHeight="24dp"
+                android:text="EN"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/videoViewParent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:background="@drawable/bottom_curve_lr"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="253dp"
+                android:layout_height="253dp">
+
+            </VideoView>
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="75dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:textColor="#666666"
+                android:text="Your Policy, Your Language"
+                android:layout_gravity="center"
+                android:lineHeight="21dp"
+                android:textSize="14dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_marginHorizontal="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/intersemibold"
+                android:textColor="#000000"
+                android:text="Choose Your Language, Secure Your Future!"
+                android:layout_gravity="center"
+                android:lineHeight="21dp"
+                android:textSize="14dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/currentSelectedLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/interextrabold"
+            android:textColor="#000000"
+            android:text="Current selected language"
+            android:lineHeight="21dp"
+            android:textSize="16dp"
+            android:textAlignment="textStart"/>
+
+        <LinearLayout
+            android:background="@drawable/upload_photo_dash"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+
+
+            <TextView
+                android:layout_marginLeft="22dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="English- EN"
+                android:lineHeight="21dp"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:src="@drawable/check_mark_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/changeYourLanguagePref"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/interextrabold"
+        android:textColor="#0A6EBD"
+        android:text="Change your language preference"
+        android:lineHeight="21dp"
+        android:textSize="16dp"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/selectYourRegion"
+        android:background="@drawable/upload_photo_dash"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="61dp">
+
+
+        <TextView
+            android:layout_marginLeft="22dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            android:textColor="#000000"
+            android:text="Select Your Region"
+            android:lineHeight="21dp"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:src="@drawable/arrow_down"
+                android:layout_width="24dp"
+                android:layout_height="24dp">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/toggleSearchViewButton"
+        android:background="@drawable/upload_photo_dash"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="61dp">
+
+
+        <TextView
+            android:layout_marginLeft="22dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            android:textColor="#000000"
+            android:text="Select Your Region"
+            android:lineHeight="21dp"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:rotation="180"
+                android:id="@+id/toggle_arrow_Mark"
+                android:src="@drawable/arrow_down"
+                android:layout_width="24dp"
+                android:layout_height="24dp">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SearchViewParent"
+        android:layout_marginHorizontal="20dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search Countries"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/RadioGroupLL"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/RadioGroupLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/grey_bg_curve_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/user_selected_language_radio"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="English - EN"
+                        android:buttonTint="@color/black"
+                        android:fontFamily="@font/intersemibold"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textSize="16dp">
+                    </RadioButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/grey_bg_curve_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+
+
+                        android:buttonTint="@color/black"
+                        android:id="@+id/selected_radio_to_default"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="English - EN"
+                        android:fontFamily="@font/intersemibold"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textSize="16dp">
+                    </RadioButton>
+                </LinearLayout>
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/updateLanguage"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:backgroundTint="@color/save_colorTinit"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+
+            android:background="@drawable/bg_curve_2">
+
+            <TextView
+                android:id="@+id/updateLanguageTxt"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/interextrabold"
+                android:textColor="@color/black"
+                android:text="Update Language"
+                android:lineHeight="24dp"
+                android:letterSpacing="-0.01"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

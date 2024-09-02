@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.Profile_Page.ProfilePage">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:background="@drawable/sign_in_bg_curve"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/sign_in_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/close_icon"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/carbon_close_outline"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/headerTxt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/interextrabold"
+                    android:textColor="@color/black"
+                    android:text="Car value"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="#666666"
+                    android:layout_marginRight="45dp"
+                    android:text="Max amount you will receive in case of total damage/ theft"
+                    android:lineHeight="17dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#e5e5e5"/>
+
+                <RadioGroup
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/radioGroupCNG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="start"
+                    android:gravity="start">
+
+                    <RadioButton
+                        android:fontFamily="@font/inter"
+                        android:id="@+id/bestValueRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Best value"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <RadioButton
+                        android:fontFamily="@font/inter"
+                        android:id="@+id/minimumRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minimum"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+                    <RadioButton
+                        android:fontFamily="@font/inter"
+                        android:id="@+id/customRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Custom"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+
+                </RadioGroup>
+
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:visibility="invisible"
+
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/RangeSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:rsb_gravity="bottom"
+                    app:rsb_indicator_background_color="#560fe5"
+                    app:rsb_indicator_height="wrap_content"
+                    app:rsb_indicator_padding_bottom="10dp"
+                    app:rsb_indicator_padding_left="30dp"
+                    app:rsb_indicator_padding_right="30dp"
+                    app:rsb_indicator_padding_top="10dp"
+                    app:rsb_indicator_radius="5dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_text_size="12sp"
+                    app:rsb_indicator_arrow_size="10dp"
+                    app:rsb_indicator_margin="-19dp"
+                    app:rsb_indicator_width="wrap_content"
+                    app:rsb_progress_height="6dp"
+                    app:rsb_mode="single"
+                    app:rsb_progress_color="#5711e5"
+                    app:rsb_progress_default_color="@color/rsbColorSeekBarDefault"
+                    app:rsb_thumb_drawable="@drawable/slider_button"
+                    app:rsb_thumb_height="66dp"
+                    app:rsb_thumb_width="66dp"
+                    app:rsb_tick_mark_mode="number"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/rangeTextLL"
+                    android:visibility="invisible"
+                    android:layout_marginTop="-25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.5">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:textColor="#000000"
+                                android:layout_marginRight="45dp"
+                                android:text="₹6.40 L"
+                                android:lineHeight="17dp"
+                                android:letterSpacing="-0.01"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:textColor="#666666"
+                                android:layout_marginRight="45dp"
+                                android:text="Minimum cover"
+                                android:lineHeight="17dp"
+                                android:letterSpacing="-0.01"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.5">
+                        <LinearLayout
+                            android:layout_marginRight="30dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:textColor="#000000"
+
+                                android:text="₹11.68 L"
+                                android:lineHeight="17dp"
+                                android:letterSpacing="-0.01"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:textColor="#666666"
+
+                                android:text="Maximum cover"
+                                android:lineHeight="17dp"
+                                android:letterSpacing="-0.01"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="50dp"
+                    android:id="@+id/secureYourCar"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:background="@drawable/log_out_bg"
+                    android:backgroundTint="#560FE5"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/saveTextView"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="#FFFFFF"
+                        android:text="Secure Your Car"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#f8fbff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Policies.MyPolicies"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/goBack"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile_back">
+
+
+
+                </ImageView>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/interextrabold"
+                android:textColor="@color/black"
+                android:text="My Policy"
+                android:lineHeight="24dp"
+                android:letterSpacing="-0.01"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/edit_LL"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/log_out_bg"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="63dp"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="#666666"
+                    android:text="Edit"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="16dp" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            android:textColor="#000000"
+            android:text="Manage policy"
+            android:lineHeight="21dp"
+            android:textSize="18dp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/managePolicyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:layout_margin="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            android:textColor="#000000"
+            android:text="Continue my purchase"
+            android:lineHeight="21dp"
+            android:textSize="18dp" />
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/continue_my_purchase_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:layout_margin="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Recommended for you "
+                android:lineHeight="21dp"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+                <pl.droidsonroids.gif.GifTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/recommended_arrow_down"
+                    android:layout_weight="0.2">
+
+                </pl.droidsonroids.gif.GifTextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

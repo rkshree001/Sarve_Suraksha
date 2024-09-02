@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/selector_home"
+        app:actionViewClass="android.widget.ImageView"
+
+        />
+
+    <item
+        android:id="@+id/menu_Claims"
+        android:title="Claims"
+
+        app:actionViewClass="android.widget.ImageView"
+        android:icon="@drawable/selector_clamis"
+        />
+
+    <item
+        android:id="@+id/menu_Policies"
+
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Policies"
+        android:icon="@drawable/selector_policies"
+        />
+
+    <item
+        android:id="@+id/menu_Profile"
+        android:title="Profile"
+
+        app:actionViewClass="android.widget.ImageView"
+        android:icon="@drawable/selector_profile"
+        />
+
+    <item
+        android:id="@+id/menu_More"
+        android:title="More"
+
+        app:actionViewClass="android.widget.ImageView"
+        android:icon="@drawable/selector_more"
+        />
+
+</menu>

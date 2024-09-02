@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/alert_dialog_bg"
+    android:layout_width="290dp"
+    android:layout_height="271dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/alert_dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close_icon"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/ImageViewPopUp"
+                android:src="@drawable/round1"
+                android:layout_width="146dp"
+                android:layout_height="146dp"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="5dp"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="-45dp"
+            android:layout_marginLeft="210dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+            <LinearLayout
+                android:id="@+id/editImage"
+                android:layout_width="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="32dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/round_my_policies"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/edit"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:id="@+id/UploadImg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bg_curve_4dp"
+                    android:backgroundTint="#ffb534">
+
+                    <TextView
+
+                        android:id="@+id/uploadOrSaveTxtView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:drawableLeft="@drawable/material_symbols_upload"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/intersemibold"
+                        android:letterSpacing="-0.01"
+                        android:lineHeight="24dp"
+                        android:text="Upload Img"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/removeImage"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="122dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/gender_default"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="@color/black"
+                        android:text="Remove"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

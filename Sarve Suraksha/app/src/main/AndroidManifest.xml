@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        android:required="false"
+        tools:targetApi="33" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO"
+        android:required="false"
+        tools:targetApi="33" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO"
+        android:required="false"
+        tools:targetApi="33" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.PlanDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.TermsAndCondition"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.MemberInfo"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.Preferred_Language.PreferredLanguage"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Vehicles.OverViewMyVehicle"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.AboutSarveSuraksha"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Landing_Page.ExploreFullView"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Landing_Page.LandingPage"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Car_Insurance.AddVehicleData"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Car_Insurance.ProposalForm"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Car_Insurance.CarInsuranceQuoteAllFilters"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Car_Insurance.CarInsuranceQoutePlanForm"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.Profile_Page.ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Policies.MyPolicies"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.User_Basic_Detail.UserBasicDetail"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Family.AddFamilyMember"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Vehicles.MyVehicles"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Bike_Insurance.BikeInsurance"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.SummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Family.MyFamilyProfilePage"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Policies.MyPoliciesDetailedDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Car_Insurance.CarInsurance"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Bike_Insurance.BikeInsuranceQoutePlanForm"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Bike_Insurance.ProposalFormBikeInsurance"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Health_Insurance.HealthInsurance"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.TermLifeInsurance"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.TermLifeInsuranceGetQuoteFormList"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.ViewPlanDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.ProposalDetailsTermLife"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.TermLifeInsurancePostQuoteForm"
+            android:exported="false" />
+        <activity android:name="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.TermLifeAllFilters" />
+    </application>
+
+</manifest>

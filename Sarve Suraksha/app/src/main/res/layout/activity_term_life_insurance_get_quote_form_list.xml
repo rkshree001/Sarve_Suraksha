@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbf6ee"
+    tools:context="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.TermLifeInsuranceGetQuoteFormList">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/goBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.2"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile_back">
+
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+                <TextView
+                    android:id="@+id/insurername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_700"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:text="Showing plans "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/edit_your"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/inter_600"
+                    android:text="Edit your search"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allFilters"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/all_filters"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/inter_600"
+                    android:text="All filters"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="visible"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/GetAllQuoteList"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/noDataFoundLL"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        android:src="@drawable/nodata_found_termlife"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unfortunately, we are unable to provide coverage at this time"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/inter_700"
+                        android:textAlignment="center"
+                        android:lineHeight="21dp"
+                        android:layout_marginHorizontal="40dp"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unfortunately, we are unable to provide coverage at this time"
+                        android:textColor="#666666"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/inter_400"
+                        android:textAlignment="center"
+                        android:lineHeight="21dp"
+                        android:layout_marginHorizontal="40dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bottomLayout"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:background="#138700"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="23dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Save up to 40% with limited pay"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="@font/inter_600"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="#F1F1F1"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+            <LinearLayout
+                android:id="@+id/comprehensiveFilter"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:id="@+id/lifeCoveLL"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_500"
+                            android:textColor="#292929"
+                            android:text="Life cover"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/selectedLifeCoverTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="₹ 50 Lakh"
+                        android:fontFamily="@font/inter_700"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="42dp"
+                    android:background="#bebebe"/>
+
+                <LinearLayout
+                    android:id="@+id/coverageTilLL"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_500"
+                            android:textColor="#292929"
+                            android:text="Coverage till"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/coverageTilTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="32 years"
+                        android:fontFamily="@font/inter_700"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="42dp"
+                    android:background="#bebebe"/>
+
+                <LinearLayout
+                    android:id="@+id/paymentType"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_500"
+                            android:textColor="#292929"
+                            android:text="Payment type"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/paymentTypeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Monthly"
+                        android:fontFamily="@font/inter_700"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thirdPartyFilter"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/planTenure"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#292929"
+                            android:text="Plan tenure"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/planSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="1 Year Plan"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#f8fbff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.TermsAndCondition">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/goBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.1"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile_back">
+
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="@font/interextrabold"
+                android:letterSpacing="-0.01"
+                android:lineHeight="24dp"
+                android:text="Terms &amp; Conditions"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/delete_ll"
+                android:layout_width="63dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/delete_icon"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    
+                    <ImageView
+                        android:layout_width="235sp"
+                        android:layout_height="217dp"
+                        android:src="@drawable/terms_and_condition"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/inter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last updated on 1/12/2021"
+                    android:textColor="#7C7C7C">
+
+
+                </TextView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:fontFamily="@font/interextrabold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Clause 1"
+                        android:textColor="#494949"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="match_parent"
+                        android:lineHeight="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem."
+                        android:textColor="#494949"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:fontFamily="@font/interextrabold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Clause 1"
+                        android:textColor="#494949"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="match_parent"
+                        android:lineHeight="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem."
+                        android:textColor="#494949"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="match_parent"
+                        android:lineHeight="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem."
+                        android:textColor="#494949"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:fontFamily="@font/interextrabold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Clause 1"
+                        android:textColor="#494949"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="match_parent"
+                        android:lineHeight="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem."
+                        android:textColor="#494949"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="match_parent"
+                        android:lineHeight="24dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem."
+                        android:textColor="#494949"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="#eeeeee"/>
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CIN: U66220KA2024PTC185040"
+                    android:textColor="#494949"/>
+
+                <TextView
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/intersemibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineHeight="15dp"
+                    android:text="© Copyright 2023-2025 BNET Insurance Broker Private Limited, All Rights Reserved"
+                    android:textColor="#494949"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+        
+        
+
+    </LinearLayout>
+</LinearLayout>

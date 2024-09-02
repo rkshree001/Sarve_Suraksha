@@ -1,0 +1,45 @@
+  private void callPincodeDetails(String pincode) {
+        Log.d("Pincode", pincode);
+        PincodeAPIClient Request = PincodeAPIClient.getapiClient();
+        Call<PincodeResponse> call = Request.getapiInterface().getPincodeDetails(pincode);
+        call.enqueue(new Callback<PincodeResponse>() {
+            @Override
+            public void onResponse(Call<PincodeResponse> call, Response<PincodeResponse> response) {
+                Log.d("PincodeSuccess", response.body().getStatus());
+                if (response.isSuccessful()) {
+                    if (response.body().getStatus().equals("Success")) {
+                        List<PincodeResponseData> listData = response.body().getPostOffice();
+                        String state = "", district = "", city = "",country="";
+                        try {
+                            state = listData.get(0).getState();
+                            district = listData.get(0).getDistrict();
+                            city = listData.get(0).getTaluk();
+                            country = listData.get(0).getCountry();
+                            et_city.setText(city);
+                            et_state.setText(state);
+                            et_district.setText(district);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            et_city.setText("");
+                            et_state.setText("");
+                            et_district.setText(district);
+                        }
+
+                    } else {
+                        et_city.setText("");
+                        et_state.setText("");
+                        et_district.setText("");
+                    }
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<PincodeResponse> call, Throwable t) {
+                Log.d("PincodeonFailure", t.toString());
+                et_city.setText("");
+                et_state.setText("");
+                et_district.setText("");
+            }
+        });
+    }

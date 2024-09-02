@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#eff6ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bnet.sarvesuraksha.view.BikeInsurance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/landing_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/goBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/profile_back">
+
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/interextrabold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/delete_ll"
+                    android:layout_width="63dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/delete_icon"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1">
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Two Wheels, \nEndless Thrills"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/ralewaysemibold"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Insure the Bike,\nUnleash the Fun!"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/inter_500"/>
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+                            <LinearLayout
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/bike_bg_ins" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sign_in_bg_curve"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:visibility="visible"
+                android:id="@+id/car_num_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_700"
+                    android:textColor="@color/black"
+                    android:text="Two wheeler insurance starting from \n₹1.5/day* Explore now!"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/parentRcDetail"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/log_out_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLength="10"
+                        android:background="@null"
+                        android:id="@+id/enterBikeNumber"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/intersemibold"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="0dp"
+                        android:hint="Enter your bike number"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:inputType="text" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/view_free_qoutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:backgroundTint="#cacddc"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/bg_curve_3dp">
+
+                        <TextView
+                            android:id="@+id/Verify_TV"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/interextrabold"
+                            android:textColor="@color/white"
+                            android:text="View Free Quotes"
+                            android:lineHeight="24dp"
+                            android:letterSpacing="-0.01"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/addCardNumber"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intersemibold"
+                    android:textColor="#292929"
+                    android:text="Don’t have bike number? Insure here > "
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginBottom="15dp"
+                        android:textSize="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="15dp"
+                        android:textAlignment="center"
+                        android:text="*All rights reserved to BNET Insurance Brokers Private Limited"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

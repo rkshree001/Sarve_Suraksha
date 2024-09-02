@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8fbff"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Vehicles.MyVehicles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.1"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:src="@drawable/profile_back">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/interextrabold"
+            android:letterSpacing="-0.01"
+            android:lineHeight="24dp"
+            android:text="My Vehicles"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/delete_ll"
+            android:layout_width="63dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/delete_icon"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/finalVehicleParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/tickGifTextViewLL"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="#e2fbe6"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="119dp">
+
+                        <pl.droidsonroids.gif.GifTextView
+                            android:id="@+id/tickGifTextView"
+                            android:visibility="visible"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/tick_animation"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:visibility="visible"
+                    android:id="@+id/addVehicleParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/bgParentAnimationArea"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:layout_height="211dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/AnimatePicsImageView"
+                                android:layout_width="match_parent"
+                                android:src="@drawable/bike_vehicle_animation"
+                                android:layout_height="115dp">
+
+
+                            </ImageView>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/upload_photo_dash"
+                        android:id="@+id/addYourVehicle"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp">
+
+                        <TextView
+                            android:drawableLeft="@drawable/add_plus_icon"
+                            android:drawablePadding="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:textColor="#000000"
+                            android:text="Add your vehicle"
+                            android:lineHeight="21dp"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/enterVehicleDeatils"
+                        android:visibility="gone"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="214dp"
+                        android:background="@drawable/bg_curve_2"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/EnterVehicleNoTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter your vehicle number"
+                                app:boxStrokeColor="#B8B8B8"
+                                app:hintTextColor="#666666"
+                                app:helperTextTextColor="#D2440E">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/EnterVehicleNoTIET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/intersemibold"
+                                    android:inputType="text"
+                                    android:maxLength="13"
+                                    android:textAllCaps="true"
+                                    android:textSize="16dp"
+                                    android:maxLines="1" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/submitVehicleLL"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="51dp"
+                                android:layout_marginTop="25dp"
+                                android:background="@drawable/bg_curve_2"
+                                android:backgroundTint="#fce3b9">
+                                <TextView
+                                    android:id="@+id/submitVehicleTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/intersemibold"
+                                    android:textColor="#bdaa8b"
+                                    android:text="Continue"
+                                    android:lineHeight="24dp"
+                                    android:letterSpacing="-0.01"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:id="@+id/cardViewVehicleParent"
+                    app:cardElevation="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="512dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        app:cardUseCompatPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/foundBikeHeaderText"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginHorizontal="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#222222"
+                            android:text="We found your bike! Confirm and add your bike"
+                            android:lineHeight="19.36dp"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="25dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:src="@drawable/bike_vehicle"
+                                android:layout_width="match_parent"
+                                android:layout_height="171dp">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/vehiclenumberTextView"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginHorizontal="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#222222"
+                            android:lineHeight="19.36dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:id="@+id/VheicleName"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginHorizontal="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#222222"
+                            android:text="TN 30 BB 6226"
+                            android:lineHeight="19.36dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+
+
+                        <LinearLayout
+                            android:layout_marginHorizontal="25dp"
+                            android:id="@+id/yourVehicleLL"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/bg_curve_2"
+                            android:backgroundTint="@color/submitVehicleLLTint">
+                            <TextView
+                                android:id="@+id/yourVehcileTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/intersemibold"
+                                android:textColor="@color/black"
+                                android:text="Continue"
+                                android:lineHeight="24dp"
+                                android:letterSpacing="-0.01"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/notYourVehicle"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginHorizontal="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:visibility="visible"
+                            android:textColor="#000000"
+                            android:text="Not your vehicle?"
+                            android:lineHeight="19.36dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:padding="8dp"
+                            android:visibility="gone"
+                            android:id="@+id/overView"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginHorizontal="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:textColor="#0A6EBD"
+                            android:text="Overview >"
+                            android:lineHeight="19.36dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/yourBikeDocuments"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="#222222"
+                        android:text="Your bike document"
+                        android:lineHeight="19.36dp"
+                        android:textSize="18dp"
+                        android:textAlignment="textStart"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:background="@drawable/bg_curve_2"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.1">
+                                        <LinearLayout
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp"
+                                            android:background="@drawable/round_my_policies"
+                                            android:backgroundTint="#EDEDED">
+
+                                            <ImageView
+                                                android:src="@drawable/pdf_icon"
+                                                android:layout_width="22dp"
+                                                android:layout_height="22dp">
+
+                                            </ImageView>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.8">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/interextrabold"
+                                            android:textColor="#222222"
+                                            android:text="Emission check certificate"
+                                            android:lineHeight="19.36dp"
+                                            android:textSize="14dp"
+                                            android:textAlignment="textStart"/>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.1">
+                                        <LinearLayout
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp">
+
+                                            <ImageView
+                                                android:src="@drawable/download_icon"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp">
+
+                                            </ImageView>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_marginTop="20dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="#EEEEEE">
+
+                            </View>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.1">
+                                        <LinearLayout
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp"
+                                            android:background="@drawable/round_my_policies"
+                                            android:backgroundTint="#EDEDED">
+
+                                            <ImageView
+                                                android:src="@drawable/plus_icon"
+                                                android:layout_width="12dp"
+                                                android:layout_height="12dp">
+
+                                            </ImageView>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.8">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/interextrabold"
+                                            android:textColor="#222222"
+                                            android:text="Registration certificate"
+                                            android:lineHeight="19.36dp"
+                                            android:textSize="14dp"
+                                            android:textAlignment="textStart"/>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.1">
+                                        <LinearLayout
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp">
+
+                                            <ImageView
+                                                android:src="@drawable/upload_icon"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp">
+
+                                            </ImageView>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_marginTop="20dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="#EEEEEE">
+
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.1">
+                                        <LinearLayout
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp"
+                                            android:background="@drawable/round_my_policies"
+                                            android:backgroundTint="#EDEDED">
+
+                                            <ImageView
+                                                android:src="@drawable/plus_icon"
+                                                android:layout_width="12dp"
+                                                android:layout_height="12dp">
+
+                                            </ImageView>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.8">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:fontFamily="@font/interextrabold"
+                                            android:textColor="#222222"
+                                            android:text="Insurance document"
+                                            android:lineHeight="19.36dp"
+                                            android:textSize="14dp"
+                                            android:textAlignment="textStart"/>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.1">
+                                        <LinearLayout
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:layout_width="32dp"
+                                            android:layout_height="32dp">
+
+                                            <ImageView
+                                                android:src="@drawable/upload_icon"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp">
+
+                                            </ImageView>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_marginTop="20dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="#EEEEEE">
+
+                            </View>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical">
+
+
+                                <View
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0.2">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="141dp"
+                                        android:background="@color/shimmer_placeholder"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/shimmer_view_container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/viewVehicleOverView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical">
+
+
+                                <View
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0.2">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="141dp"
+                                        android:background="@color/shimmer_placeholder"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/shimmer_view_container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical">
+
+
+                                <View
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0.2">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="141dp"
+                                        android:background="@color/shimmer_placeholder"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/shimmer_view_container3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical">
+
+
+                                <View
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0.2">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="141dp"
+                                        android:background="@color/shimmer_placeholder"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/MyVehiclesListRecyclerView"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

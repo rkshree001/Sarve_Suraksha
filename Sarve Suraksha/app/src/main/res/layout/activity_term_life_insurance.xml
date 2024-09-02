@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:background="#FBF6EE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bnet.sarvesuraksha.view.Landing_Page_Section.Term_Life_Insurance.TermLifeInsurance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:visibility="visible"
+            android:id="@+id/carouselLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/changeImagesCarousel"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/termlife1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="-20dp"
+            android:id="@+id/childLL"
+            android:background="@drawable/sign_in_bg_curve_cream"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/toolbarLL"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/goBackss"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/profile_back">
+
+
+
+                    </ImageView>
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PolicyNameToolBarText"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_700"
+                    android:textColor="@color/black"
+                    android:text="Term Life Insurance"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="18dp" />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/headerTV"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/ralewaysemibold"
+                android:textColor="@color/black"
+                android:text="Let’s find the best Term Life Insurance Plan for you "
+                android:lineHeight="28dp"
+                android:letterSpacing="-0.01"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/first_conatiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/FullNameTxtInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full name"
+                        app:boxStrokeColor="#B8B8B8"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#666666"
+                        app:helperTextTextColor="#D2440E">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fullNameTxtEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/inter_400"
+                            android:inputType="text"
+                            android:textSize="16dp"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/parentMobileLL"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/txt_field_bg_plain"
+
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.15"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_400"
+                        android:textColor="#383838"
+                        android:text="+91"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="16dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLength="10"
+                        android:background="@null"
+                        android:id="@+id/mobileNumber"
+                        android:fontFamily="@font/inter_400"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:textColor="#666666"
+                        android:hint="Phone number"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/bg_curve_3dp_green"
+                        android:layout_width="0dp"
+                        android:layout_height="19dp"
+                        android:layout_weight="0.5">
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/secure"/>
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="We don’t spam"
+                            android:fontFamily="@font/inter_500"
+                            android:textColor="#186F65"
+                            android:textSize="10dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/verifyLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:backgroundTint="#fce3b9"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bg_curve_2">
+
+                    <TextView
+                        android:id="@+id/Verify_TV"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="#bdaa8b"
+                        android:text="Secure Future"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/second_conatiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pincode"
+                        app:boxStrokeColor="#B8B8B8"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#666666"
+                        app:helperTextTextColor="#D2440E">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/inter_400"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textSize="16dp"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date Of Birth"
+                        app:boxStrokeColor="#B8B8B8"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#666666"
+                        app:helperTextTextColor="#D2440E">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dateOfBirthTxtEditTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:focusable="false"
+                            android:fontFamily="@font/inter_400"
+                            android:inputType="none"
+                            android:textSize="16dp"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#666666"
+                        android:text="Gender"
+                        android:lineHeight="18dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/parentGender"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/male_LL"
+
+                        android:layout_width="0dp"
+                        android:background="@drawable/gender_selected"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="51dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/interextrabold"
+                            android:textColor="@color/black"
+                            android:text="Male"
+                            android:lineHeight="24dp"
+                            android:letterSpacing="-0.01"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/female_LL"
+                        android:layout_marginVertical="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/gender_default_plain"
+                        android:gravity="center"
+                        android:layout_height="51dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/interextrabold"
+                            android:textColor="@color/black"
+                            android:text="Female"
+                            android:lineHeight="24dp"
+                            android:letterSpacing="-0.01"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/other_LL"
+                        android:background="@drawable/gender_default_plain"
+                        android:layout_marginVertical="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="51dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/interextrabold"
+                            android:textColor="@color/black"
+                            android:text="Other"
+                            android:lineHeight="24dp"
+                            android:letterSpacing="-0.01"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/proceedLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:backgroundTint="#fce3b9"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/bg_curve_2">
+
+                        <TextView
+                            android:id="@+id/proceed_TV"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/interextrabold"
+                            android:textColor="#bdaa8b"
+                            android:text="Secure Future"
+                            android:lineHeight="24dp"
+                            android:letterSpacing="-0.01"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/blurLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/goBack"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile_back"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/blur"
+            android:layout_width="141dp"
+            android:layout_height="169dp"
+            android:backgroundTint="#8CFFFFFF"
+            android:background="@drawable/bg_curve_4dp">
+
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ralewaysemibold"
+                android:lineHeight="21dp"
+                android:textAlignment="textStart"
+                android:textColor="#003A37"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Life's a Thrill Ride, \nEnsure the Adventure Never Ends!">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/inter_500"
+                android:lineHeight="21dp"
+                android:textSize="12dp"
+                android:textColor="#FE7A36"
+                android:layout_height="match_parent"
+                android:text="#LifeProtection">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

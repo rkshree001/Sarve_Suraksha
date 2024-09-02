@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sarve Suraksha</string>
+    <string name="skip">Skip</string>
+    <string name="text_1">Simple, Secure,&amp; Speedy Car Insurance Awaits!</string>
+    <string name="text_2">Protect Your Bike, Safeguard Your Journey</string>
+    <string name="text_3">Secure Smiles &amp; LivesGet Family Cover Today</string>
+    <string name="text_4">Secure Your Future, Protect Your Loved Ones</string>
+    <dimen name="grid_spacing">8dp</dimen>
+    <dimen name="bottom_sheet_peek_height">200dp</dimen>
+    <dimen name="card_view_height">345dp</dimen>
+    <string name="quarterly_with_discount">Quarterly <font color="#06B217">(Save up to 4%)</font></string>
+    <string name="half_yearly_with_discount">Half yearly <font color="#06B217">(Save up to 6%)</font></string>
+    <string name="yearly_with_discount">Yearly <font color="#06B217">(Save up to 7%)</font></string>
+
+</resources>

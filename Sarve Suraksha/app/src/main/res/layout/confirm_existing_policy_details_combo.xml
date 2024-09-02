@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/close_round_icon"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_700"
+            android:textColor="#000000"
+            android:text="Confirm existing policy details"
+            android:lineHeight="24dp"
+            android:letterSpacing="-0.01"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="#666666"
+            android:text="Great! You have own damage and third party policy. Kindly confirm the details below"
+            android:lineHeight="14.5dp"
+            android:letterSpacing="-0.01"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/basic_detail_tab_stroke">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/OwndamageParentLL"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/user_selected_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_700"
+                        android:textColor="@color/black"
+                        android:text="Own damage"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ThirdpartyparentLL"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_700"
+                        android:textColor="@color/black"
+                        android:text="Third party"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/OwndamageLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/alertODLL"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_curve_3dp"
+                android:orientation="vertical"
+                android:backgroundTint="#fdeded">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05">
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/caution" />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/alertTextViewOD"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="#D2440E"
+                        android:text="Your own damage policy is about to get expired in 12 days. Renew today!"
+                        android:lineHeight="15dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Insurer"
+                android:lineHeight="24dp"
+                android:letterSpacing="-0.01"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/InsuresNameSpinnerOD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box_border"
+                    android:fontFamily="@font/inter_500"
+                    android:padding="13dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#666666"
+                    android:textSize="16dp"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="8dp"
+                    app:spinner_divider_color="#AABBCC"
+                    app:spinner_arrow_tint="@color/black"
+                    app:spinner_popup_height="150dp"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    android:hint="Insurer"
+                    app:spinner_item_height="46dp"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Expiry date"
+                android:lineHeight="24dp"
+                android:letterSpacing="-0.01"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date"
+                    app:hintTextColor="#666666"
+                    app:boxStrokeColor="#B8B8B8"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/expiryDateOD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#222222"
+                        android:textColor="@color/black"
+                        android:drawableEnd="@drawable/baseline_calendar_month_24"
+                        android:fontFamily="@font/inter_500"
+                        android:inputType="text"
+                        android:textSize="16dp"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ProceedOwnDamage"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:backgroundTint="#560FE5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bg_curve_3dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_700"
+                        android:textColor="@color/white"
+                        android:text="Next"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/thirdPartyLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/alertTPLL"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_curve_3dp"
+                android:orientation="vertical"
+                android:backgroundTint="#fdeded">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05">
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/caution" />
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/alertTextViewTP"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="#D2440E"
+                        android:text="Your own damage policy is about to get expired in 12 days. Renew today!"
+                        android:lineHeight="15dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Insurer"
+                android:lineHeight="24dp"
+                android:letterSpacing="-0.01"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/thirdPartySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box_border"
+                    android:fontFamily="@font/inter_500"
+                    android:padding="13dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#666666"
+                    android:textSize="16dp"
+                    app:spinner_arrow_gravity="end"
+                    android:hint="Insurer"
+                    app:spinner_arrow_padding="8dp"
+                    app:spinner_divider_color="#AABBCC"
+                    app:spinner_arrow_tint="@color/black"
+                    app:spinner_popup_height="150dp"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_height="46dp"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Expiry date"
+                android:lineHeight="24dp"
+                android:letterSpacing="-0.01"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date"
+                    app:hintTextColor="#666666"
+                    app:boxStrokeColor="#B8B8B8"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/expirydateThirdParty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:drawableEnd="@drawable/baseline_calendar_month_24"
+                        android:fontFamily="@font/inter_500"
+                        android:inputType="text"
+                        android:textSize="16dp"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/confirmAndProceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:backgroundTint="#560FE5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bg_curve_3dp">
+
+                    <TextView
+                        android:id="@+id/Verify_TV"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/white"
+                        android:text="Confirm &amp; Proceed"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

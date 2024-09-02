@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingVertical="4dp"
+    android:paddingHorizontal="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/headerLL"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/requires_fileds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/headerText"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#D2440E"
+                    android:drawableLeft="@drawable/mdi_information"
+                    android:drawableTint="#D2440E"
+                    android:text="3 days left to expire this policy, Renew today!"
+                    android:lineHeight="21dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:backgroundTint="@color/white"
+            android:background="@drawable/requires_fileds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/round_tint"
+                        android:gravity="center"
+                        android:background="@drawable/vehicle_img_bg_curve"
+                        android:orientation="vertical"
+                        android:layout_width="76dp"
+                        android:layout_height="42dp">
+
+                        <ImageView
+                            android:id="@+id/policy_image"
+                            android:layout_width="55dp"
+                            android:scaleType="fitXY"
+                            android:layout_height="40dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/policy_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/inter"
+                                android:textColor="#292929"
+                                android:text="Digit own damage"
+                                android:lineHeight="21dp"
+                                android:textSize="16dp" />
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:textColor="#292929"
+                            android:text="₹ 5,06,170"
+                            android:lineHeight="21dp"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_marginTop="6dp"
+                            android:id="@+id/coverage_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="IDV Cover"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="@color/placeHolderGrey"
+                            android:lineHeight="21dp"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/confirmAndProceed"
+                                android:layout_width="134dp"
+                                android:layout_height="35dp"
+                                android:backgroundTint="#560FE5"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/bg_curve_3dp">
+
+                                <TextView
+                                    android:id="@+id/Verify_TV"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/interextrabold"
+                                    android:textColor="@color/white"
+                                    android:text=" ₹3,879/ year"
+                                    android:lineHeight="24dp"
+                                    android:letterSpacing="-0.01"
+                                    android:textSize="16dp" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#fff4e0"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/health_and_safety"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/intersemibold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Available add ons"
+                    android:textColor="@color/black222222"
+                    android:textSize="14dp"
+                    />
+
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/arrow_down_icon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:background="#fffbf5"
+                android:layout_width="match_parent"
+                android:layout_height="108dp">
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:buttonTint="#696969"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Zero depreciation - ₹ 268"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="@color/black222222"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:buttonTint="#696969"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Consumables - ₹ 478"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="@color/black222222"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:buttonTint="#696969"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Key &amp; lock replacement cover - ₹ 268"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="@color/black222222"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/road_side_assistance_icon"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intersemibold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="24x7 roadside assistance"
+                    android:textColor="@color/black222222"
+                    android:textSize="12dp">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/road_side_assistance_icon"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intersemibold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="24x7 roadside assistance"
+                    android:textColor="@color/black222222"
+                    android:textSize="12dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bottom_left_right_3dp">
+
+                    <TextView
+                        android:drawablePadding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/interextrabold"
+                        android:letterSpacing="-0.01"
+                        android:lineHeight="24dp"
+                        android:drawableLeft="@drawable/info_icon"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="Compare premium"
+                        android:textColor="@color/black222222"
+                        android:textSize="14dp">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/pb_1"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#2E2E2E"
+                            android:text="₹4,880"
+                            android:lineHeight="21dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/pb_2"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#2E2E2E"
+                            android:text="₹3,900"
+                            android:lineHeight="21dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

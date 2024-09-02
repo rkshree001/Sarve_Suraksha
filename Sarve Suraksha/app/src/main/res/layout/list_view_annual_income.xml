@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:paddingVertical="20dp"
+                android:id="@+id/radioButtonAnnualIncome"
+                android:buttonTint="@color/green_focused"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25 Lac+"
+                android:textSize="16dp"
+                android:textColor="#666666"
+                android:fontFamily="@font/inter_500"
+                android:paddingLeft="15dp">
+
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

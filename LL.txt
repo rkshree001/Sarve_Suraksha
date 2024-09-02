@@ -1,0 +1,165 @@
+package com.bnet.sarvesuraksha.view
+
+import android.annotation.SuppressLint
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.MotionEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AlertDialog
+import com.bnet.savresuraksha.R
+import com.google.android.material.textfield.TextInputEditText
+
+@SuppressLint("ClickableViewAccessibility")
+class CarInsurance : ComponentActivity() {
+
+    private lateinit var landingPage: View
+    private lateinit var enterCarNumber: TextInputEditText
+    private lateinit var view_free_qoutes: LinearLayout
+
+    private var weFoundYourCarDialog: AlertDialog? = null
+    private var confirmExistingPolicyDialog: AlertDialog? = null
+    private var claimInExistingPolicyDialog: AlertDialog? = null
+    private var enterUserDetailsDialog: AlertDialog? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_car_insurance)
+
+        landingPage = findViewById(R.id.landing_page)
+        enterCarNumber = findViewById(R.id.enterCarNumber)
+        view_free_qoutes = findViewById(R.id.view_free_qoutes)
+
+        enterCarNumber.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                landingPage.visibility = View.GONE
+            }
+        }
+
+        findViewById<View>(R.id.main).setOnTouchListener { _, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                if (currentFocus != null) {
+                    if (currentFocus is EditText) {
+                        val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+                        currentFocus?.clearFocus()
+                    }
+                }
+            }
+            false
+        }
+
+        view_free_qoutes.setOnClickListener {
+            val enteredCarNumber = enterCarNumber.text.toString()
+            ShowWeFoundYourCarAlertDialog(enteredCarNumber)
+        }
+    }
+
+    private fun ShowWeFoundYourCarAlertDialog(enteredCarNumber: String) {
+        val inflater = LayoutInflater.from(this)
+        val alertDialogView = inflater.inflate(R.layout.we_found_your_car, null)
+        val builder = AlertDialog.Builder(this)
+        builder.setView(alertDialogView)
+        val alertDialog = builder.create()
+
+        val closeIcon = alertDialogView.findViewById<ImageView>(R.id.closeIcon)
+        val carNumber = alertDialogView.findViewById<TextView>(R.id.carNumber)
+        val editCarNumber = alertDialogView.findViewById<LinearLayout>(R.id.edit_car_number)
+        val confirmAndProceed = alertDialogView.findViewById<LinearLayout>(R.id.confirmAndProceed)
+
+        editCarNumber.setOnClickListener {
+            // Handle edit car number
+        }
+
+        confirmAndProceed.setOnClickListener {
+            alertDialog.dismiss()
+            ConfirmExistingPolicyAlertDialog()
+        }
+
+        carNumber.text = enteredCarNumber
+
+        closeIcon.setOnClickListener {
+            alertDialog.dismiss()
+            landingPage.visibility = View.VISIBLE
+        }
+
+        alertDialog.show()
+        weFoundYourCarDialog = alertDialog
+    }
+
+    private fun ConfirmExistingPolicyAlertDialog() {
+        val inflater = LayoutInflater.from(this)
+        val alertDialogView = inflater.inflate(R.layout.confirm_existing_policy_details, null)
+        val builder = AlertDialog.Builder(this)
+        builder.setView(alertDialogView)
+        val alertDialog = builder.create()
+
+        val closeIcon = alertDialogView.findViewById<ImageView>(R.id.closeIcon)
+        val confirmAndProceedExisting = alertDialogView.findViewById<LinearLayout>(R.id.confirmAndProceedExisting)
+
+        confirmAndProceedExisting.setOnClickListener {
+            alertDialog.dismiss()
+            ClaimInExistingPolicyDialog()
+        }
+
+        closeIcon.setOnClickListener {
+            alertDialog.dismiss()
+            weFoundYourCarDialog?.show()
+        }
+
+        alertDialog.show()
+        confirmExistingPolicyDialog = alertDialog
+    }
+
+    private fun ClaimInExistingPolicyDialog() {
+        val inflater = LayoutInflater.from(this)
+        val alertDialogView = inflater.inflate(R.layout.claim_in_existing_policy, null)
+        val builder = AlertDialog.Builder(this)
+        builder.setView(alertDialogView)
+        val alertDialog = builder.create()
+
+        val closeIcon = alertDialogView.findViewById<ImageView>(R.id.closeIcon)
+        val proceed = alertDialogView.findViewById<LinearLayout>(R.id.Proceed)
+
+        proceed.setOnClickListener {
+            alertDialog.dismiss()
+            EnterUserDetailsDialog()
+        }
+
+        closeIcon.setOnClickListener {
+            alertDialog.dismiss()
+            confirmExistingPolicyDialog?.show()
+        }
+
+        alertDialog.show()
+        claimInExistingPolicyDialog = alertDialog
+    }
+
+    private fun EnterUserDetailsDialog() {
+        val inflater = LayoutInflater.from(this)
+        val alertDialogView = inflater.inflate(R.layout.enter_your_details, null)
+        val builder = AlertDialog.Builder(this)
+        builder.setView(alertDialogView)
+        val alertDialog = builder.create()
+
+        val closeIcon = alertDialogView.findViewById<ImageView>(R.id.closeIcon)
+        val proceed = alertDialogView.findViewById<LinearLayout>(R.id.Proceed)
+
+        proceed.setOnClickListener {
+            // Handle proceed
+        }
+
+        closeIcon.setOnClickListener {
+            alertDialog.dismiss()
+            claimInExistingPolicyDialog?.show()
+        }
+
+        alertDialog.show()
+        enterUserDetailsDialog = alertDialog
+    }
+}

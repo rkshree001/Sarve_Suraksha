@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#eff6ff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bnet.sarvesuraksha.view.Landing_Page_Section.Car_Insurance.CarInsurance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/landing_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/goBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/profile_back">
+
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/interextrabold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/delete_ll"
+                    android:layout_width="63dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/delete_icon"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@drawable/car_main_grey_bg"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_height="181dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ride On, Stress Off"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/inter_600"/>
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Where Every Mile is Covered with a Smile!"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/inter_500"/>
+
+                            <LinearLayout
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#DriveInsured"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/ralewaysemibold"/>
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2">
+                            <LinearLayout
+                                android:layout_gravity="bottom"
+                                android:gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:scaleType="fitEnd"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/car_ins_bg_veh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sign_in_bg_curve"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:visibility="visible"
+                android:id="@+id/car_num_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:textColor="@color/black"
+                    android:text="Car Insurance Joyride"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_400"
+                    android:textColor="@color/black"
+                    android:text="Where Your Ride and Wallet Stay Turbocharged!"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="12dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/parentRcDetail"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/enterCarNumberTxtInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeColor="#560FE5"
+                        app:hintEnabled="false"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#222222"
+                        app:helperTextTextColor="#D2440E">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/enterCarNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:hint="Enter your car number"
+                            android:fontFamily="@font/intersemibold"
+                            android:inputType="text"
+                            android:textSize="14dp"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/view_free_qoutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:backgroundTint="#cacddc"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/bg_curve_3dp">
+
+                        <TextView
+                            android:id="@+id/Verify_TV"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_700"
+                            android:textColor="@color/white"
+                            android:text="View Free Quotes"
+                            android:lineHeight="24dp"
+                            android:letterSpacing="-0.01"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/addCardNumber"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_400"
+                    android:textColor="#292929"
+                    android:text="Don't have car number? Insure here >"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginBottom="15dp"
+                        android:textSize="10dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/inter_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="15dp"
+                        android:textAlignment="center"
+                        android:text="*All rights reserved to BNET Insurance Brokers Private Limited"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

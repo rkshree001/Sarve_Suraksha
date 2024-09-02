@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4f1ff"
+    tools:context="com.bnet.sarvesuraksha.view.Landing_Page_Section.Bike_Insurance.BikeInsuranceQoutePlanForm"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/goBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.2"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile_back">
+
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2">
+                <TextView
+                    android:id="@+id/CarName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/interextrabold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:text="Hyundai Creta"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/modelNameAndType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/interextrabold"
+                    android:text="1.6 E - Petrol - 2021"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editCardDetails"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/interextrabold"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:drawablePadding="5dp"
+                    android:text="Edit details"
+                    android:textColor="#666666"
+                    android:drawableLeft="@drawable/edit_icon_2"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="36dp"
+                            android:layout_gravity="start"
+                            android:gravity="center"
+                            android:background="@drawable/filter_bg_grey_curve_4dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:letterSpacing="-0.01"
+                                android:text="All Filters"
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@drawable/filter"
+                                android:textColor="#292929"
+
+                                android:textSize="12dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/sortByFilters"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="36dp"
+                            android:layout_gravity="start"
+                            android:gravity="center"
+                            android:background="@drawable/filter_bg_grey_curve_4dp">
+
+                            <TextView
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@drawable/arrow_down_icon"
+                                android:textColor="#292929"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:letterSpacing="-0.01"
+                                android:text="Sort by"
+                                android:textSize="12dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/filteroption_addOn"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="36dp"
+                            android:layout_gravity="start"
+                            android:gravity="center"
+                            android:background="@drawable/filter_bg_grey_curve_4dp">
+
+                            <TextView
+                                android:drawablePadding="5dp"
+                                android:drawableRight="@drawable/arrow_down_icon"
+                                android:textColor="#292929"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemibold"
+                                android:letterSpacing="-0.01"
+                                android:text="Addons"
+                                android:textSize="12dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/totalPlansAvl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/interextrabold"
+                            android:letterSpacing="-0.01"
+                            android:lineHeight="24dp"
+
+                            android:textColor="#292929"
+                            android:textSize="14dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/allFilters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/intersemibold"
+                            android:letterSpacing="-0.01"
+                            android:text="All Filters"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/filter"
+                            android:textColor="#292929"
+                            android:padding="6dp"
+                            android:textSize="12dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/filterOption_LL"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:backgroundTint="#d1ebff"
+                        android:background="@drawable/bg_curve_3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </pl.droidsonroids.gif.GifImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/intersemibold"
+                            android:letterSpacing="-0.01"
+                            android:lineHeight="24dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="In all the plans car video inspection required"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            />
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/headerLL"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/requires_fileds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/headerText"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="5dp"
+                                    android:fontFamily="@font/inter"
+                                    android:textColor="#D2440E"
+                                    android:drawableLeft="@drawable/mdi_information"
+                                    android:drawableTint="#D2440E"
+                                    android:text="3 days left to expire this policy, Renew today!"
+                                    android:lineHeight="21dp"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/basic_detail_tab_stroke">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:id="@+id/OwndamageParentLL"
+                                android:layout_marginVertical="6dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_width="0dp"
+                                android:background="@drawable/user_selected_bg_cream"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/interextrabold"
+                                    android:textColor="@color/black"
+                                    android:text="Comprehensive"
+                                    android:lineHeight="24dp"
+                                    android:letterSpacing="-0.01"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/ThirdpartyparentLL"
+                                android:layout_marginVertical="6dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/interextrabold"
+                                    android:textColor="@color/black"
+                                    android:text="Third party"
+                                    android:lineHeight="24dp"
+                                    android:letterSpacing="-0.01"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/OwndamageLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/GetAllQuoteList"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/thirdPartyLL"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/GetAllQuoteListTP"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/endOfData"-->
+<!--                    android:layout_marginVertical="5dp"-->
+<!--                    android:layout_width="282dp"-->
+<!--                    android:layout_height="170dp"-->
+<!--                    android:src="@drawable/cuate"-->
+<!--                    android:layout_gravity="center"/>-->
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+            <LinearLayout
+                android:id="@+id/comprehensiveFilter"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:id="@+id/IdvCoverLL"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#292929"
+                            android:text="IDV Cover"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="IDV Cover"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="42dp"
+                    android:background="#bebebe"/>
+
+                <LinearLayout
+                    android:id="@+id/ncbBottomSheet"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#292929"
+                            android:text="NCB"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="0%"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="42dp"
+                    android:background="#bebebe"/>
+
+                <LinearLayout
+                    android:id="@+id/existingPolicyLL"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#292929"
+                            android:text="Existing plan"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Own damage"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thirdPartyFilter"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/planTenure"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/intersemibold"
+                            android:textColor="#292929"
+                            android:text="Plan tenure"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/arrow_down_icon"
+                            app:tint="#666666" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/planSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="1 Year Plan"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:lineHeight="21dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

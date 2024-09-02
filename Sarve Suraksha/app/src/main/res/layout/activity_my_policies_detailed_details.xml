@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#f8fbff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Policies.MyPoliciesDetailedDetails"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:src="@drawable/profile_back">
+
+
+
+            </ImageView>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/PolicyNameToolBarText"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/interextrabold"
+            android:textColor="@color/black"
+            android:text="My Health Policy"
+            android:lineHeight="24dp"
+            android:letterSpacing="-0.01"
+            android:textSize="16dp" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="67dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/basic_detail_tab_stroke">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/activeLL"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/user_selected_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:text="Active"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ExpiredLL"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:text="Expired"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/activeChildLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Active Policy"
+                android:lineHeight="21dp"
+                android:textSize="18dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/activePolicyRecylerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:layout_margin="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/active_No_data"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="232dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/no_policy_found"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#000000"
+                    android:text="No Policy Found!"
+                    android:lineHeight="21dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#666666"
+                    android:text="Great! All of your policies are renewed &amp; active."
+                    android:lineHeight="21dp"
+                    android:textSize="12dp" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/expiredChildLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter"
+                android:textColor="#000000"
+                android:text="Expired Policy"
+                android:lineHeight="21dp"
+                android:textSize="18dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/expiredPolicyRecylerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:layout_margin="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/expire_no_data"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="232dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/no_policy_found"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#000000"
+                    android:text="No Policy Found!"
+                    android:lineHeight="21dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#666666"
+                    android:text="Great! All of your policies are renewed &amp; active."
+                    android:lineHeight="21dp"
+                    android:textSize="12dp" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/recommendLL"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:background="@drawable/rounded_corners"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#000000"
+                        android:text="Recommended for you "
+                        android:lineHeight="21dp"
+                        android:textSize="18dp" />
+
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp">
+                        <pl.droidsonroids.gif.GifTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommended_arrow_down"
+                            android:layout_weight="0.2">
+
+                        </pl.droidsonroids.gif.GifTextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerRecommended"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    />
+
+
+                <LinearLayout
+                    android:background="@drawable/rounded_indicator_bg"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="75dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="24dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:id="@+id/indicator1"
+                        android:layout_width="0dp"
+                        android:background="@drawable/rounded_indicator_bg"
+                        android:backgroundTint="#bcbcbc"
+                        android:layout_weight="1"
+                        android:layout_height="5dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="invisible"
+                        android:id="@+id/indicator2"
+                        android:layout_width="0dp"
+                        android:background="@drawable/rounded_indicator_bg"
+                        android:backgroundTint="#bcbcbc"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="5dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="invisible"
+                        android:id="@+id/indicator3"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:background="@drawable/rounded_indicator_bg"
+                        android:backgroundTint="#bcbcbc"
+                        android:layout_weight="1"
+                        android:layout_height="5dp">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

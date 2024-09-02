@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/close_round_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </LinearLayout>
+        <TextView
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="#000000"
+            android:text="Any claim in your existing policy?"
+            android:lineHeight="24dp"
+            android:letterSpacing="-0.01"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="start">
+
+            <RadioButton
+                android:fontFamily="@font/inter"
+                android:id="@+id/radioYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+             />
+
+            <RadioButton
+                android:id="@+id/radioNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#666666"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp" />
+
+            <RadioButton
+                android:textColor="#666666"
+                android:fontFamily="@font/inter"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/radioNotSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Sure"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp" />
+
+        </RadioGroup>
+        
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#CFDBD5"/>
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="#000000"
+            android:text="Any external CNG kit installed?"
+            android:lineHeight="24dp"
+            android:letterSpacing="-0.01"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:layout_marginTop="8dp"
+
+            android:layout_marginLeft="20dp"
+            android:id="@+id/radioGroupCNg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:gravity="start">
+
+            <RadioButton
+                android:textColor="#666666"
+                android:fontFamily="@font/inter"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/radioYesCNG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <RadioButton
+                android:textColor="#666666"
+                android:fontFamily="@font/inter"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/radioNoCNG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#CFDBD5"/>
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/Proceed"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#560FE5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bg_curve_3dp">
+
+                <TextView
+                    android:id="@+id/Verify_TV"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/interextrabold"
+                    android:textColor="@color/white"
+                    android:text="Proceed"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

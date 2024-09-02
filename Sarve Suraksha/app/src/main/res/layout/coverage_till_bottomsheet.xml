@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_view"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.Profile_Page.ProfilePage">
+
+    <LinearLayout
+        android:id="@+id/bottomSheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_bg_curve"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/sign_in_main_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/close_icon"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/close_round_icon"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/headerTxt"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/interextrabold"
+                        android:textColor="@color/black"
+                        android:text="Coverage till"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e5e5e5"/>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            android:id="@+id/coverageTillSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/box_border"
+                            android:fontFamily="@font/inter_500"
+                            android:padding="13dp"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textColorHint="#000000"
+                            android:textSize="16dp"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_arrow_padding="8dp"
+                            app:spinner_divider_color="#AABBCC"
+                            app:spinner_arrow_tint="@color/black"
+                            app:spinner_popup_height="150dp"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            android:hint="Select Coverage Till"
+                            app:spinner_item_height="46dp"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/white"
+                            app:spinner_popup_elevation="14dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:hintTextColor="#666666"
+                            android:background="@drawable/txt_field_bg_plain"
+                            app:hintEnabled="false"
+                            app:hintAnimationEnabled="false"
+                            app:helperTextTextColor="#D2440E">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/lifeCoverACTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:completionThreshold="1"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="40dp"
+                                    android:fontFamily="@font/inter_500"
+                                    android:textSize="14sp"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="#000000"
+                                    android:hint="Select" />
+
+                                <ImageView
+                                    android:id="@+id/dropdownArrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="10dp"
+                                    android:src="@drawable/arrow_down"
+                                    android:contentDescription="Dropdown Arrow" />
+                            </RelativeLayout>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginBottom="25dp"
+                            android:id="@+id/updateLifeCover"
+                            android:layout_width="match_parent"
+                            android:layout_height="51dp"
+                            android:backgroundTint="#FFB534"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:background="@drawable/bg_curve_2">
+
+                            <TextView
+                                android:id="@+id/Verify_TV"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/interextrabold"
+                                android:textColor="#000000"
+                                android:text="Update"
+                                android:lineHeight="24dp"
+                                android:letterSpacing="-0.01"
+                                android:textSize="16dp" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

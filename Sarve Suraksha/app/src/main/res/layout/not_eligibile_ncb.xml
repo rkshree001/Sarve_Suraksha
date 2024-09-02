@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.Profile_Page.ProfilePage">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/sign_in_bg_curve"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/sign_in_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/close_icon"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/carbon_close_outline"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/signInText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/interextrabold"
+                    android:textColor="@color/black"
+                    android:text="Not eligible for NCB"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_500"
+                    android:textColor="#666666"
+                    android:text="NCB is set to 0% because previous policy expired more than 90 days"
+                    android:lineHeight="17sp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#e5e5e5"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/okay_ll"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:background="@drawable/log_out_bg"
+                    android:backgroundTint="#560FE5"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/okayTxtView"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/intersemibold"
+                        android:textColor="#FFFFFF"
+                        android:text="Okay"
+                        android:lineHeight="24dp"
+                        android:letterSpacing="-0.01"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

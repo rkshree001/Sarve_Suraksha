@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="327dp"
+    android:orientation="vertical"
+    android:layout_height="472dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/close_round_icon"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/interextrabold"
+            android:textColor="#000000"
+            android:text="Oops!\nWe are unable to find your car"
+            android:lineHeight="17dp"
+            android:letterSpacing="-0.01"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="251dp"
+            android:src="@drawable/uanble_to_find_car"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/addCarDetails"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:backgroundTint="#560FE5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bg_curve_3dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/interextrabold"
+                    android:textColor="@color/white"
+                    android:text="Add car details"
+                    android:lineHeight="24dp"
+                    android:letterSpacing="-0.01"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fbff"
+    tools:context="com.bnet.sarvesuraksha.view.Profile_Page_Section.My_Family.MyFamilyProfilePage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/goBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.1"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile_back">
+
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="@font/interextrabold"
+                android:letterSpacing="-0.01"
+                android:lineHeight="24dp"
+                android:text="My Family"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/edit_LL"
+                android:layout_width="63dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/log_out_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/intersemibold"
+                    android:gravity="center"
+                    android:letterSpacing="-0.01"
+                    android:lineHeight="24dp"
+                    android:text="Edit"
+                    android:textColor="#666666"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <ScrollView-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/finalVehicleParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/tickGifTextViewLL"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="#e2fbe6"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="119dp">
+
+                        <pl.droidsonroids.gif.GifTextView
+                            android:id="@+id/tickGifTextView"
+                            android:visibility="visible"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/tick_animation"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addAreaMain"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="430dp"
+                    android:background="@drawable/bottom_curve_lr"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <VideoView
+                            android:visibility="gone"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/videoView"
+                            android:layout_width="253dp"
+                            android:layout_height="253dp"
+                            />
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="253dp"
+                            android:layout_height="253dp"
+                            android:src="@drawable/family_gif_videos"/>
+
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginHorizontal="75dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:textColor="#666666"
+                            android:text="Secure Your Nest, Add the Rest: Add Family, Add Protection!"
+                            android:layout_gravity="center"
+                            android:lineHeight="21dp"
+                            android:textSize="14dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:background="@drawable/upload_photo_dash"
+                        android:id="@+id/addFamilyMember"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:textColor="#000000"
+                            android:drawableLeft="@drawable/add_plus_icon"
+                            android:drawablePadding="10dp"
+                            android:text="Add family member"
+                            android:lineHeight="21dp"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/upload_photo_dash"
+                    android:id="@+id/addFamMemPost"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#000000"
+                        android:drawableLeft="@drawable/add_plus_icon"
+                        android:drawablePadding="10dp"
+                        android:text="Add family member"
+                        android:lineHeight="21dp"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:id="@+id/shimmer_view_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:backgroundTint="@color/white"
+                            android:background="@drawable/requires_fileds"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/round_my_policies"
+                                    android:backgroundTint="@color/shimmer_placeholder"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.15"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="15dp"
+                                        android:backgroundTint="@color/shimmer_placeholder"
+                                        android:src="@drawable/vector"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:id="@+id/shimmer_view_container1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:backgroundTint="@color/white"
+                            android:background="@drawable/requires_fileds"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/round_my_policies"
+                                    android:backgroundTint="@color/shimmer_placeholder"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.15"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="15dp"
+                                        android:backgroundTint="@color/shimmer_placeholder"
+                                        android:src="@drawable/vector"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:id="@+id/shimmer_view_container2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:backgroundTint="@color/white"
+                            android:background="@drawable/requires_fileds"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/round_my_policies"
+                                    android:backgroundTint="@color/shimmer_placeholder"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.15"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="15dp"
+                                        android:backgroundTint="@color/shimmer_placeholder"
+                                        android:src="@drawable/vector"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:id="@+id/shimmer_view_container3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:backgroundTint="@color/white"
+                            android:background="@drawable/requires_fileds"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/round_my_policies"
+                                    android:backgroundTint="@color/shimmer_placeholder"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+
+                                <View
+                                    android:layout_width="120dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                                <View
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="150dp"
+                                    android:layout_height="20dp"
+                                    android:background="@color/shimmer_placeholder" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="0.15"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="15dp"
+                                        android:backgroundTint="@color/shimmer_placeholder"
+                                        android:src="@drawable/vector"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/familyMembersAddedRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+<!--        </ScrollView>-->
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
